@@ -9,9 +9,6 @@ import csv
 
 def worker_task(x):
     start_time = time.time()
-    a = ["python", 'python-basic.py']
-    b = ['./target/debug/hello-pycon']
-    c = ["python", "python-aio.py"]
     d = ["python", "python-req.py"]
     result = subprocess.run(d, capture_output=True, text=True)
 

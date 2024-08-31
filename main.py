@@ -9,7 +9,6 @@ router = app.router()
 @router.get("/")
 def home(res, req):
     print("request made!")
-    time.sleep(1)
     res.end({"a":"Hello World!"})
 
 @router.get("/hello")
